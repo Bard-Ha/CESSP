@@ -1,0 +1,228 @@
+Build CESSP — Chemical Energy Storage System Predictor
+
+You are an expert full-stack engineer, UI/UX designer, and scientific software architect.
+Build a complete, production-grade web platform called CESSP (Chemical Energy Storage System Predictor).
+Hosting platform can be Replit, Vercel, Render, AWS, or any other modern environment.
+
+The platform must be capable of:
+
+🧪 1. Core Purpose
+
+CESSP is a scientific web tool for:
+
+Predicting energy storage materials performance using a physics-informed Graph Neural Network (GNN)
+
+Exploring materials datasets
+
+Visualizing structures in 3D
+
+Generating new hypothetical materials
+
+Educating users with interactive explanations
+
+This must look like a futuristic AI research interface.
+
+🎨 2. Branding + UI Style
+
+Brand name: CESSP
+Meaning: Chemical Energy Storage System Predictor
+
+Branding guidelines:
+
+Ultra-modern sci-fi lab aesthetic
+
+Neon-accent dark mode (electric blue, neon cyan, violet)
+
+Micro-animations, hover glows, smooth transitions
+
+High-end 3D hero section
+
+Lottie-based animated icons
+
+Subtle particle effects in the background
+
+Smooth page transitions (Framer Motion)
+
+Hero section includes a rotating 3D molecular structure
+
+The UI should feel like:
+Apple.com × NASA × Material Science Lab
+
+🧱 3. Technology Stack
+Frontend
+
+React + Vite
+
+TailwindCSS for styling
+
+Three.js or React-Three-Fiber for 3D
+
+Framer Motion for animations
+
+Lottie for animated icons
+
+Plotly.js for scientific graphs
+
+Monaco Editor for structure editing
+
+Drag-and-drop material file upload
+
+Backend
+
+FastAPI (Python)
+
+PyTorch + PyTorch Geometric
+
+pymatgen + RDKit + ASE for structure handling
+
+ONNX/TorchScript optional for optimization
+
+Uvicorn server
+
+WebSockets for streaming predictions
+
+Database
+
+SQLite (local development)
+
+PostgreSQL for production if supported
+
+🧬 4. Essential Features
+Frontend
+
+3D interactive structure viewer (CIF, POSCAR, SMILES)
+
+Dynamic prediction page
+
+Animated loading sequences (scientific style)
+
+Interactive dataset explorer
+
+Tabs for:
+
+Prediction
+
+Material generator
+
+Dataset browser
+
+Documentation
+
+Download results in CSV/JSON
+
+Dark mode default
+
+Smooth animated transitions everywhere
+
+Backend
+
+Endpoints:
+
+/predict_material → receives structure → returns:
+
+voltage profile
+
+ionic conductivity
+
+stability window
+
+diffusion coefficients
+
+uncertainty estimates
+
+/visualize_graph → return processed graph data
+
+/generate_candidates → creates new hypothetical materials
+
+/dataset_query → search the curated dataset
+
+Backend requirements:
+
+Load pre-trained physics-informed GNN
+
+Accept CIF / SMILES / POSCAR / JSON graph
+
+Preprocess structure automatically
+
+Return predictions + uncertainties
+
+Normalize units internally
+
+🧠 5. ML Engine Requirements
+
+In separate ml_engine/ folder
+
+GNN pipeline modules:
+
+preprocessor.py
+
+gnn_model.py
+
+predictor.py
+
+Physics constraints:
+
+energy conservation
+
+charge neutrality
+
+thermodynamic validity checks
+
+📁 6. Project Structure
+
+Generate a complete project with:
+
+frontend/
+  src/
+    components/
+    pages/
+    3d/
+    animations/
+    hooks/
+backend/
+  main.py
+  routers/
+  models/
+  ml_engine/
+model/
+  placeholder.pt
+assets/
+  logos/
+  animations/
+README.md
+.replit OR replit.nix
+
+📘 7. Deliverables
+
+Generate:
+
+All frontend + backend files
+
+3D animation components
+
+Full API implementation
+
+Example mock GNN model (placeholder)
+
+Complete README with setup instructions
+
+Deployment configuration for:
+
+Replit
+
+Vercel
+
+Render
+
+✨ 8. Coding Style
+
+Clean, industry-standard architecture
+
+Heavily commented
+
+Modular and simple to expand
+
+Focus on clarity for scientific users
+
+Now generate the full scaffolded project code for CESSP.
+Include all folders and files.

@@ -1,0 +1,225 @@
+Build CESSP (Chemical Energy Storage System Predictor)
+
+You are an expert full-stack engineer, UI/UX designer, and scientific AI architect.
+
+Your task is to build CESSP — Chemical Energy Storage System Predictor:
+A modern, animated, 3D-enabled scientific web platform capable of predicting and discovering energy-storage materials using a physics-informed GNN backend.
+
+☑️ 0. Free Tier Requirements (MUST FOLLOW)
+
+Before generating anything, follow these rules:
+
+Generate the project in multiple small batches to avoid AI or Replit free-tier limits.
+
+Always produce resumable code — each batch must be self-contained.
+
+If the session ends or limits are reached:
+
+The user can download the partially generated project.
+
+Upload it later (in any plan) and you will continue exactly where you left off.
+
+When generating multiple files, place them in separate code blocks to prevent truncation.
+
+If a file is too long, split it into:
+
+part1
+
+part2
+
+part3
+…etc.
+
+At the end of every batch, say:
+“Ready for the next batch? Just say: Continue.”
+
+This ensures the full project can be built safely under free-tier restrictions.
+
+🧪 1. CESSP Purpose
+
+CESSP allows users to:
+
+Upload materials (CIF, POSCAR, SMILES, JSON graph)
+
+View 3D structures
+
+Run predictions with a physics-informed GNN model
+
+Explore materials datasets
+
+Generate hypothetical new compounds
+
+Visualize uncertainties and descriptors
+
+This platform should feel like AI × Material Science × Sci-Fi UI.
+
+🎨 2. Branding + UI Style
+
+Brand Name: CESSP
+Meaning: Chemical Energy Storage System Predictor
+
+UI Style:
+
+Neon-accent dark mode
+
+Experimental-lab-meets-futuristic aesthetic
+
+3D hero section (React-Three-Fiber)
+
+Smooth page transitions (Framer Motion)
+
+Particle background
+
+Lottie animated icons
+
+Dashboard-like layout
+
+High scientific clarity
+
+🧱 3. Technology Stack
+Frontend
+
+React + Vite
+
+TailwindCSS
+
+React-Three-Fiber (Three.js) for 3D
+
+Framer Motion
+
+Plotly.js
+
+Lottie
+
+Monaco Editor
+
+Drag-and-drop upload
+
+Backend
+
+FastAPI (Python)
+
+PyTorch + PyTorch Geometric
+
+RDKit, ASE, pymatgen
+
+WebSockets
+
+Ready for GPU later, but CPU-only fallback now
+
+Database
+
+SQLite (free tier friendly)
+
+PostgreSQL optional upgrade
+
+🧬 4. Features
+Frontend
+
+3D rotating molecule in hero section
+
+Upload CIF/POSCAR/SMILES
+
+Dataset explorer
+
+Prediction dashboard
+
+Candidate generator
+
+Animated scientific graphs
+
+Backend
+
+/predict_material endpoint
+
+/generate_candidates endpoint
+
+/visualize_structure endpoint
+
+/dataset_query endpoint
+
+Physics-informed constraints:
+
+charge neutrality
+
+energy conservation
+
+thermodynamic filters
+
+📂 5. Project Structure
+
+Generate:
+
+cessp/
+  frontend/
+    src/
+      components/
+      pages/
+      3d/
+      animations/
+  backend/
+    main.py
+    routers/
+    ml_engine/
+    models/
+  model/
+    placeholder_gnn.pt
+  assets/
+    logos/
+    animations/
+  README.md
+  replit.nix or .replit
+
+🧰 6. Architecture Requirements
+
+Modular
+
+Well-commented
+
+Easy for non-experts
+
+Fully local runnable
+
+GPU-ready but not required
+
+Capable of phased generation over multiple AI sessions
+
+📝 7. What You Must Produce First
+
+The filesystem scaffolding
+
+Empty files with correct project layout
+
+README first draft
+
+Then generate the project in small manageable batches
+
+Stop after completing Batch 1 and ask:
+“Ready for Batch 2?”
+
+📘 8. Deliverables (in batches!)
+
+Batch 1 – folder structure + README skeleton
+Batch 2 – frontend configuration + initial pages
+Batch 3 – backend FastAPI skeleton
+Batch 4 – ML engine placeholder
+Batch 5 – 3D UI components
+Batch 6 – Dataset explorer
+Batch 7 – Deployment configuration
+Batch 8 – Finishing touches
+
+Each batch must fit free-tier limits and be resumable.
+
+✨ 9. Coding Style
+
+Industrial-grade
+
+Modern
+
+Clear
+
+Modular
+
+Reusable
+
+Begin with Batch 1 now. Remember: small chunks only.
